@@ -1,0 +1,50 @@
+Pizza Shop Project
+------------------
+
+Features
+--------
+ ✅ GET pizzas
+ ☑️  GET pizza
+ ☑️  POST pizza
+ ☑️  PUT pizza
+ ☑️  DELETE pizza
+ ✅ MongoDB connection
+ ☑️  Angular client
+ ☑️  pizza component
+ ☑️  shop list pizzas component
+ ☑️  create pizza form
+ ☑️  get single pizza
+ ☑️  update pizza form 
+ ☑️  delete pizza
+
+CLI History
+-----------
+dotnet --version // 8.0.406
+mkdir pizzashop
+dotnet new sln
+dotnet new webapi -o api -controllers
+dotnet sln add webapi
+dotnet sln list
+dotnet build
+dotnet new class -n PizzaController -o Controllers
+dotnet new class -n Pizza -o Models 
+mkdir data
+docker-comopse up -d
+docker ps
+docker container ls
+docker image ls
+docker volume ls
+docker exec -it mongodb-container mongosh -u admin -p password 
+mongosh> show dbs
+mongosh> db.pizza.insertOne({id: 1, name: "Classic Italian", isGlutenFree: false})
+mongosh> db.pizza.find().pretty()
+mongosh> db.pizza.find()
+dotnet add package MongoDB.Driver
+mongosh> db.pizza.find()
+mongosh> db.pizza.updateMany({ _id: ObjectId("67e04a6e06a08abdc86b140b") }, { $unset: { "id": "" } })
+mkdir Services
+dotnet new class -n PizzaService -o Services
+mongosh> db.pizza.renameCollection("pizzas")
+
+✅
+☑️
