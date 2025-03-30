@@ -1,27 +1,11 @@
 exit
 db.pizzas.find()
-db.pizzas.find
-db.pizzas.find().pretty()
-show collections
-use pizzashop
-exit
-show collections
-db.pizza.renameCollection("pizzas")
-show collections
-use pizzashop
-exit
-show collections
-use pizzashop
-exit
-db.pizza.find().pretty()
-db.pizza.updateMany({ _id: ObjectId("67e04a6e06a08abdc86b140b") }, { $unset: { "id": "" } })
-db.pizza.find().pretty()
-show collections
-use pizzashop
-exit
-db.pizza.find().pretty()
-show collections
-db.pizza.insertOne({id: 1, name: "Classic Italian", isGlutenFree: false})
-show collections
-use pizzashop
+db.pizzas.insertOne({name: "Classic Italian", isGlutenFree: false})
+db.pizzas.insertOnt({name: "Classic Italian", isGlutenFree: false})
 show dbs
+use pizzashop
+exit
+show collections
+use pizzasshop
+show collections
+use pizzashop
